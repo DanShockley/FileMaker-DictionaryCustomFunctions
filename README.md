@@ -24,9 +24,11 @@ To convert FileMaker objects to XML:
 1.	Copy the FileMaker objects to your clipboard
 2.	Open Data Viewer - Watch tab
 3.	Create a variable and set the calculation to the following (Mac only):
+	
 	BE_SetClipboardText (  
 		BE_ClipboardText ( GetValue( BE_ClipboardFormats; 2 ) )
 	; "public.utf8-plain-text" )
+
 4.	Click evaluate now
 5.	Your clipboard now contains XML
 
@@ -35,9 +37,11 @@ To convert XML to FileMaker Objects:
 1.	Copy the XML to your clipboard
 2.	Open Data Viewer - Watch tab
 3.	Create a variable and set the calculation to the following (Mac only):
+	
 	BE_SetClipboardText ( 
 		BE_ClipboardText ( "public.utf8-plain-text" )
 	; "CorePasteboardFlavorType 0x584D464E" )
+
 4.	Click evaluate now
 5.	Your clipboard now contains FileMaker Objects
 
